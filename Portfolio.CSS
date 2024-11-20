@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@font-face{
+    font-family:Formula-Serial-Regular;
+    src:url(Formula-Serial-Regular.ttf);
+
+}
+body{
+    margin:50px auto;
+    width: 80%;
+    font-family: Formula-Serial-Regular;
+    color: #013A63;
+    background-color: #c7ced4;
+    box-shadow: 0 5px 10px 0 #293742;
+}
+.container{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 300px 1fr;
+    grid-template-areas: 
+    "side main main"
+    "side main main"
+    "foot foot foot";
+    background-color: #f9f7f3;
+}
+
+/*SIDEBAR*/
+
+.logo{
+    width: 150px;
+    height: 150px;
+}
+.together{
+    padding-right:10px;
+    padding-left: 5px;
+}
+.together h3{
+    color: #35728d;
+}
+.line{
+    display: flex;
+    align-content: space-around;
+} 
+.side{
+    grid-area: side;
+}
+.sidebar{
+    background-color: #e2e8ec;
+}
+.sidebar h1{
+    padding-top: 40px;
+}
+.side-links{
+    list-style-type: none;
+    padding: 50px;
+}
+.side-links li{
+    padding-top: 8px;
+    text-align: center;
+    font-size: 1.75rem;
+}
+.side-links a{
+    text-decoration: none;
+    color:#61a5c2;
+}
+.side-links a:hover{
+    color: #A9D6E5;
+}
+
+/*MAIN AREA*/
+
+.main{
+    grid-area: main;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    align-content: space-around;
+}
+.intro{
+    background-color: #dbedf1;
+    padding: 10px;
+}
+.intro h2{
+    border-bottom: 2px solid #89C2D9;
+    padding: 10px;
+    font-size: 1.75rem;
+}
+.intro p{
+    padding: 10px;
+    font-size: 1.2rem;
+    color: #35728d;
+}
+
+/*FOOTER*/
+
+footer{
+    grid-area: foot;
+    padding: 10px;
+    background-color: #012A4A;
+    color: #A9D6E5;
+    text-align: center;
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 960px){
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .line{
+        background-color:#cddce7;
+    }
+}
+/* Figure this one out
+@media screen and (max-width: 350px){
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}*/
