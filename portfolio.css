@@ -94,18 +94,23 @@ body{
     color: #F1A6A6;
     text-decoration: none;
     font-size: 1.25rem;
+    transition: color 0.5s;
 }
 .linkH:hover{
     color: #FFD4A1;
+    transition: color 0.5s;
 }
 .linkR:hover{
     color: #e2dd64;
+    transition: color 0.5s;
 }
 .linkP:hover{
     color: #9fcf8f;
+    transition: color 0.5s;
 }
 .linkC:hover{
     color: #b3dde6;
+    transition: color 0.5s;
 }
 
 .hero{
@@ -220,10 +225,12 @@ label{
 }
 button[type=submit]{
     background-color: #f6eedf;
+    transition: background-color 0.5s;
 }
 button[type=submit]:hover{
     cursor:pointer;
     background-color:#f6e6df;
+    transition: background-color 0.5s;
 }
 fieldset{
     padding: 10px;
@@ -254,7 +261,8 @@ fieldset{
 }
 .my-projects{
     text-align: center;
-    padding-top: 80px;
+    padding-top: 40px;
+    padding-bottom: 20px;
     font-size: 4.5rem;
 }
 .all-projects{
@@ -264,12 +272,20 @@ fieldset{
     align-content: center;
     flex-wrap: wrap;
 }
+.specialProject{
+    border: 2px solid #F1A6A6;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
 .project{
     width: 400px;
     background-color: white;
     margin: 20px;
     margin-bottom: 40px;
     border-radius: 4px;
+    transition: transform 0.2s;
+}
+.project:hover{
+    transform: translateY(-5px);
 }
 .project h3, .project p, .skill-buttons{
     margin: 0 20px;
