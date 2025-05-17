@@ -265,12 +265,21 @@ fieldset{
     padding-bottom: 20px;
     font-size: 4.5rem;
 }
+.special-projects{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-size: 4.5rem;
+}
 .all-projects{
     display: flex;
     flex-direction:row;
     justify-content: space-around;
     align-content: center;
     flex-wrap: wrap;
+}
+.special-all{
+    margin-bottom: 30px;
 }
 .specialProject{
     border: 2px solid #F1A6A6;
